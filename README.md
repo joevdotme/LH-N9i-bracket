@@ -34,7 +34,7 @@ make test
 make brackets
 ```
 
-`make brackets` builds the stock 75 mm bar and the Gen8 65 mm bar. Those two commands wrote the shop files checked in under `build/`:
+`make brackets` builds the stock 75 mm bar and the Gen8 65 mm bar. It runs the two commands that wrote the shop files checked in under `build/`:
 
 ```
 make bracket CHIPSET=lga115x
