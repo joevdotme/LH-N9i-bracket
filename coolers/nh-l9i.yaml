@@ -1,0 +1,19 @@
+name: nh-l9i
+description: >
+  Fastening bar for the Noctua NH-L9i. One bar of the pair. Center holes
+  bolt to the heatsink. End holes take the motherboard screws.
+center_spacing_mm: 23.0
+center_spacing_status: assumed
+orthogonal_pitch_mm: 75.0
+orthogonal_pitch_status: known
+bend_angle_deg: 20.0
+bend_angle_status: assumed
+web_width_mm: 16.0
+web_width_status: assumed
+center_hole_diameter_mm: 3.3
+countersink_major_diameter_mm: 6.5
+countersink_angle_deg: 90.0
+ear_hole_diameter_mm: 2.5
+tap: M3x0.5
+countersink_side: >
+  Top face of the flat web, the face on the inside of the upward bends.

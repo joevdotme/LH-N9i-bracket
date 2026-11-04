@@ -1,0 +1,7 @@
+name: lga1700
+sockets: [lga1700]
+holes_mm: [78, 78]
+notes: >
+  Square 78 mm pattern. The NH-L9i holds its bars 75 mm apart, so neither
+  side matches until SPAN or ORTHOGONAL is set.
+source: Intel LGA1700 cooler mounting.

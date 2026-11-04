@@ -1,0 +1,7 @@
+name: lga115x
+sockets: [lga1150, lga1151, lga1155, lga1156, lga1200]
+holes_mm: [75, 75]
+notes: >
+  Square 75 mm pattern shared by LGA1150, LGA1151, LGA1155, LGA1156, and
+  LGA1200. This is the stock NH-L9i bar.
+source: Intel LGA115x cooler mounting.
