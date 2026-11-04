@@ -1,0 +1,7 @@
+name: am4
+sockets: [am4, am5]
+holes_mm: [54, 90]
+notes: >
+  AM4 and AM5 share 54 x 90 mm cooler holes. Neither side is the NH-L9i
+  75 mm bar spacing.
+source: AMD AM4 and AM5 cooler mounting.

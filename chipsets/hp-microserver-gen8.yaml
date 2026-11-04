@@ -1,0 +1,8 @@
+name: hp-microserver-gen8
+socket: lga1155
+holes_mm: [75, 65]
+notes: >
+  The CPU socket is LGA1155. The cooler holes are 75 x 65 mm. The bar spans
+  the 65 mm side so the two bars stay 75 mm apart on the heatsink.
+source: >
+  https://www.reddit.com/r/homelab/comments/i4zs6v/hp_microserver_gen8_with_noctua_cpu_cooler/

@@ -1,0 +1,6 @@
+name: lga2011-narrow
+sockets: [lga2011-narrow, lga2011-3-narrow]
+holes_mm: [56, 94]
+notes: >
+  Narrow ILM, 56 x 94 mm. Neither side is the NH-L9i 75 mm bar spacing.
+source: Intel narrow ILM cooler mounting.

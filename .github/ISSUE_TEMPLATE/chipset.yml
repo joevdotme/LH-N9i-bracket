@@ -1,0 +1,48 @@
+name: Chipset hole pattern
+description: Ask for a motherboard hole pattern the bracket generator can target
+title: "chipset: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Pattern name
+      description: Short id, for example lga1700 or hp-microserver-gen8
+      placeholder: hp-microserver-gen8
+    validations:
+      required: true
+  - type: input
+    id: pitch_x
+    attributes:
+      label: Hole pitch X (mm)
+      description: Center to center of one side of the cooler pattern
+      placeholder: "75"
+    validations:
+      required: true
+  - type: input
+    id: pitch_y
+    attributes:
+      label: Hole pitch Y (mm)
+      description: Center to center of the other side
+      placeholder: "65"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link or citation for the hole spacing
+    validations:
+      required: true
+  - type: input
+    id: cooler
+    attributes:
+      label: Cooler
+      description: Which fastening bar this pattern is for
+      value: nh-l9i
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Socket name, which side differs from 75 mm, and anything you measured on the bar

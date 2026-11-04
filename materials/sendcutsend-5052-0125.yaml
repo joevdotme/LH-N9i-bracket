@@ -1,0 +1,17 @@
+name: sendcutsend-5052-0125
+vendor: SendCutSend
+material: 5052-H32 aluminum
+thickness_in: 0.125
+inside_bend_radius_in: 0.0625
+inside_bend_radius_status: assumed
+k_factor: 0.44
+k_factor_status: assumed
+die_width_in: 0.630
+bend_clearance_in: 0.315
+min_feature_to_edge_mm: 1.6
+countersink_depth_fraction: 0.6
+quantity: 2
+notes: >
+  Confirm the inside bend radius against the current SendCutSend bend table
+  for 5052 H32 at 0.125 in. M3 is inside the published tap range for this
+  thickness (M2 through M10). Countersinking starts at 0.125 in.

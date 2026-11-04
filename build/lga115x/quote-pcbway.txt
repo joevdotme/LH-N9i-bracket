@@ -1,0 +1,35 @@
+PCBWay sheet-metal quote
+
+Part: NH-L9i fastening bar, one of a pair. Chipset lga115x.
+Quantity: 2 (the two bars are identical).
+Order ready: NO.
+Unverified dimensions: center_spacing_mm, web_width_mm, ear_diameter_mm, bend_angle_deg, ear_height_mm, inside_bend_radius_mm.
+Measure those on the stock bar, update the cooler YAML, and rebuild before ordering.
+Formed end-hole span: 75.000 mm. This is the motherboard pitch the bar spans.
+Center-hole spacing: 23.000 mm. This bolts to the heatsink and does not change.
+Flat blank: 92.025 x 16.000 mm.
+The flat hole distance is longer than the formed span because of the bend allowance.
+Bend: 2 (one each side), 20.000 deg, ears up.
+Inside bend radius modeled: 1.587 mm. K-factor 0.440.
+Ear-hole axis is perpendicular to the ear, 20.000 deg from vertical.
+Sheet thickness 3.175 mm is thicker than the stock stamping. Check NH-L9i NM-IBT4 screw engagement before ordering.
+
+Process: sheet metal
+Material: mild steel (change this on the form if you want stainless or aluminum)
+Thickness: 3.175 mm
+Files: bracket.step (one formed solid, plain holes), bracket-flat.dxf, bracket-drawing.pdf
+The STEP was modeled with the SendCutSend 5052 0.125 in bend radius. Accept the shop radius or rebuild after editing the material preset.
+
+Do your parts need threads? Yes.
+  2 x M3 x 0.5 through tap on the outer holes (formed span 75.000 mm).
+  Pilot drawn in the CAD: 2.500 mm.
+
+Countersink:
+  2 holes, the inner pair at 23.000 mm.
+  Pilot diameter: 3.300 mm.
+  Countersink diameter: 6.500 mm.
+  Angle: 90 deg.
+  Depth: 1.600 mm.
+  Side: Top face of the flat web, the face on the inside of the upward bends.
+
+Bends: 2 x 20.000 deg, inside radius 1.587 mm, ears up.

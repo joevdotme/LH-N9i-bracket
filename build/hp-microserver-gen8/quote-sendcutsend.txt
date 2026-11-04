@@ -1,0 +1,34 @@
+SendCutSend quote
+
+Part: NH-L9i fastening bar, one of a pair. Chipset hp-microserver-gen8.
+Quantity: 2 (the two bars are identical).
+Order ready: NO.
+Unverified dimensions: center_spacing_mm, web_width_mm, ear_diameter_mm, bend_angle_deg, ear_height_mm, inside_bend_radius_mm.
+Measure those on the stock bar, update the cooler YAML, and rebuild before ordering.
+Formed end-hole span: 65.000 mm. This is the motherboard pitch the bar spans.
+Center-hole spacing: 23.000 mm. This bolts to the heatsink and does not change.
+Flat blank: 82.025 x 16.000 mm.
+The flat hole distance is longer than the formed span because of the bend allowance.
+Bend: 2 (one each side), 20.000 deg, ears up.
+Inside bend radius modeled: 1.587 mm. K-factor 0.440.
+Ear-hole axis is perpendicular to the ear, 20.000 deg from vertical.
+Sheet thickness 3.175 mm is thicker than the stock stamping. Check NH-L9i NM-IBT4 screw engagement before ordering.
+
+Material: 5052-H32 aluminum
+Thickness: 3.175 mm (0.125 in catalog thickness)
+Preferred upload: bracket-flat.dxf
+Alternate upload: bracket.step
+Units: millimeters
+Dashed lines in the DXF are bend centers. Confirm 2 bends, ears up, in the 3D preview.
+If the catalog bend radius for 5052 H32 at 0.125 in differs from the modeled radius, update materials/sendcutsend-5052-0125.yaml and rebuild.
+
+Holes in the file are plain through-holes. Select the services below; do not expect threads or countersinks in the CAD.
+Inner pair, 23.000 mm apart: 90 degree countersink for M3.
+  Drawn minor: 3.300 mm.
+  Major: 6.500 mm (do not draw it).
+  Depth: 1.600 mm.
+  Side: Top face of the flat web, the face on the inside of the upward bends.
+Outer pair, 65.000 mm apart in the formed part: tap M3 x 0.5, through.
+  Drawn diameter: 2.500 mm. The tap service may resize this to the M3 tap drill.
+
+Services: bending, countersinking (inner pair), tapping (outer pair).

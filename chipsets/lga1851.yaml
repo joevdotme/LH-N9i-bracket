@@ -1,0 +1,7 @@
+name: lga1851
+sockets: [lga1851]
+holes_mm: [78, 78]
+notes: >
+  Same 78 x 78 mm mounting as LGA1700. The NH-L9i orthogonal pitch does not
+  match until SPAN or ORTHOGONAL is set.
+source: Intel LGA1851 cooler mounting matches LGA1700.

@@ -1,0 +1,7 @@
+name: lga2011-square
+sockets: [lga2011, lga2011-3, lga2066]
+holes_mm: [80, 80]
+notes: >
+  Square ILM, 80 x 80 mm. Also used on LGA1366. The NH-L9i orthogonal pitch
+  does not match until SPAN or ORTHOGONAL is set.
+source: Intel square ILM cooler mounting.
