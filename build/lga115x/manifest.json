@@ -1,0 +1,95 @@
+{
+  "chipset": "lga115x",
+  "cooler": "nh-l9i",
+  "order_ready": false,
+  "unverified": [
+    "center_spacing_mm",
+    "web_width_mm",
+    "ear_diameter_mm",
+    "bend_angle_deg",
+    "ear_height_mm",
+    "inside_bend_radius_mm"
+  ],
+  "warnings": [],
+  "notes": [
+    "Ears use the shop sheet thickness, which is thicker than the stock NH-L9i stamping. Check NM-IBT4 screw engagement.",
+    "One bend per side tilts the tapped hole by the bend angle from vertical.",
+    "Quantity is 2. Both bars are identical and span the same pitch."
+  ],
+  "pattern_mm": [
+    75.0,
+    75.0
+  ],
+  "span_mm": 75.0,
+  "center_spacing_mm": 23.0,
+  "arm_mm": 26.0,
+  "orthogonal_pitch_mm": 75.0,
+  "ear_height_mm": 3.3484,
+  "flat_length_mm": 92.025,
+  "flat_width_mm": 16.0,
+  "thickness_mm": 3.175,
+  "bend_angle_deg": 20.0,
+  "inside_bend_radius_mm": 1.5875,
+  "k_factor": 0.44,
+  "k_factor_status": "assumed",
+  "bend_flat_x_mm": 28.2615,
+  "x_tangent_mm": 27.7406,
+  "flange_mm": 9.2301,
+  "web_width_mm": 16.0,
+  "ear_diameter_mm": 16.0,
+  "holes": [
+    {
+      "role": "center",
+      "side": "left",
+      "plan_x_mm": -11.5,
+      "plan_z_mm": 1.5875,
+      "flat_x_mm": -11.5,
+      "diameter_mm": 3.3,
+      "operation": "countersink"
+    },
+    {
+      "role": "center",
+      "side": "right",
+      "plan_x_mm": 11.5,
+      "plan_z_mm": 1.5875,
+      "flat_x_mm": 11.5,
+      "diameter_mm": 3.3,
+      "operation": "countersink"
+    },
+    {
+      "role": "ear",
+      "side": "left",
+      "plan_x_mm": -37.5,
+      "plan_z_mm": 4.9359,
+      "flat_x_mm": -38.0125,
+      "diameter_mm": 2.5,
+      "operation": "tap"
+    },
+    {
+      "role": "ear",
+      "side": "right",
+      "plan_x_mm": 37.5,
+      "plan_z_mm": 4.9359,
+      "flat_x_mm": 38.0125,
+      "diameter_mm": 2.5,
+      "operation": "tap"
+    }
+  ],
+  "dfm": {
+    "ok": true,
+    "min_bend_gap_mm": 8.501,
+    "countersink_depth_mm": 1.6,
+    "countersink_depth_limit_mm": 1.905,
+    "bend_clearance_mm": 8.001
+  },
+  "material": "sendcutsend-5052-0125",
+  "tap": "M3x0.5",
+  "files": [
+    "bracket.step",
+    "bracket-flat.dxf",
+    "bracket-drawing.pdf",
+    "quote-sendcutsend.txt",
+    "quote-pcbway.txt",
+    "manifest.json"
+  ]
+}

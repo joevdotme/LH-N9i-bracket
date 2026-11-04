@@ -27,7 +27,8 @@ def write_pdf(
     countersink_side: str,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    drawing = canvas.Canvas(str(path), pagesize=letter)
+    # invariant=1 freezes the PDF timestamp and file id so a rebuild matches.
+    drawing = canvas.Canvas(str(path), pagesize=letter, invariant=1)
     width, height = letter
     y = height - 48
 

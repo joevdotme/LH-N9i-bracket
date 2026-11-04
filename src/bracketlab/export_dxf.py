@@ -10,6 +10,17 @@ from bracketlab.layout import Layout
 
 
 def write_dxf(layout: Layout, path: Path) -> None:
+    # Freeze header dates, GUIDs, and the ezdxf version stamp so a rebuild matches.
+    # The flag has to be set before the document is created. The created-by stamp
+    # is written at that moment, and save only refreshes the written-by stamp.
+    ezdxf.options.write_fixed_meta_data_for_testing = True
+    try:
+        _write_dxf(layout, path)
+    finally:
+        ezdxf.options.write_fixed_meta_data_for_testing = False
+
+
+def _write_dxf(layout: Layout, path: Path) -> None:
     document = ezdxf.new("R2010", setup=True)
     document.units = ezdxf.units.MM
     if "BEND" not in document.linetypes:

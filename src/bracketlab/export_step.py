@@ -8,6 +8,7 @@ from pathlib import Path
 from build123d import Box, Cylinder, Plane, Polygon, Pos, Rot, SlotOverall, extrude, export_step, mirror
 
 from bracketlab.layout import Layout
+from bracketlab.stamp import EXPORT_TIMESTAMP
 
 # A hair of overlap lets the web, bend, and ear fuse into one solid.
 _OVERLAP_MM = 0.05
@@ -19,7 +20,7 @@ def write_step(layout: Layout, path: Path) -> None:
     if len(solid.solids()) != 1:
         raise RuntimeError(f"Expected one solid, got {len(solid.solids())}.")
     path.parent.mkdir(parents=True, exist_ok=True)
-    export_step(solid, path)
+    export_step(solid, path, timestamp=EXPORT_TIMESTAMP)
 
 
 def formed_solid(layout: Layout):

@@ -1,5 +1,8 @@
 PYTHON ?= python3
 export PYTHONPATH := src:$(PYTHONPATH)
+# ezdxf writes a few object records in hash order. A fixed seed keeps the DXF
+# byte-for-byte the same as the copies checked in under build/.
+export PYTHONHASHSEED := 0
 
 CHIPSET ?= lga115x
 COOLER ?= nh-l9i

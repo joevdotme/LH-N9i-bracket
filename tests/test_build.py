@@ -1,3 +1,4 @@
+import filecmp
 import json
 import os
 import subprocess
@@ -99,6 +100,26 @@ def test_lga1700_refuses_until_span_or_orthogonal_is_set(tmp_path: Path):
     assert "SPAN=" in refused.stderr
     assert "ORTHOGONAL=" in refused.stderr
 
+
+def test_checked_in_shop_files_match_a_rebuild(tmp_path: Path):
+    names = (
+        "bracket.step",
+        "bracket-flat.dxf",
+        "bracket-drawing.pdf",
+        "quote-sendcutsend.txt",
+        "quote-pcbway.txt",
+        "manifest.json",
+    )
+    for chipset in ("lga115x", "hp-microserver-gen8"):
+        _build(tmp_path, chipset)
+        for name in names:
+            fresh = tmp_path / chipset / name
+            checked_in = ROOT / "build" / chipset / name
+            assert checked_in.is_file(), checked_in
+            assert filecmp.cmp(fresh, checked_in, shallow=False), f"{chipset}/{name}"
+
+
+def test_lga1700_span_override_still_builds(tmp_path: Path):
     forced = _build(tmp_path, "lga1700", span=78)
     assert forced.layout.span_mm == pytest.approx(78)
     assert forced.layout.center_spacing_mm == pytest.approx(23)

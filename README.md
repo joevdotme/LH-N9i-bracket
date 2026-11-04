@@ -34,7 +34,14 @@ make test
 make brackets
 ```
 
-`make brackets` builds the stock 75 mm bar and the Gen8 65 mm bar.
+`make brackets` builds the stock 75 mm bar and the Gen8 65 mm bar. Those two commands wrote the shop files checked in under `build/`:
+
+```
+make bracket CHIPSET=lga115x
+make bracket CHIPSET=hp-microserver-gen8
+```
+
+Each one runs `python3 -m bracketlab build --chipset <name> --cooler nh-l9i --out build` and fills `build/<chipset>/` with `bracket.step`, `bracket-flat.dxf`, `bracket-drawing.pdf`, `quote-sendcutsend.txt`, `quote-pcbway.txt`, and `manifest.json`. The STEP files are about 580 KB, so they are stored in git directly.
 
 ## Other hole patterns
 
